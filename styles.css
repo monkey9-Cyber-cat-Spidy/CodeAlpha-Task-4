@@ -358,3 +358,22 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+.request-form-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.request-form-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.request-form-section p {
+  margin-bottom: 1rem;
+  color: #555;
+}
