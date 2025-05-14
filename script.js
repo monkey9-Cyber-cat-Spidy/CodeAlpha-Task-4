@@ -19,7 +19,8 @@ const songs = [
   { title: "Another Love", artist: "Tom Odell", src: "music/song18.mp3", cover: "images/cover18.jpg" },
   { title: "7 Years", artist: "Jasmine Thompson", src: "music/song19.mp3", cover: "images/cover19.jpg" },
   { title: "Skyfall", artist: "Adele", src: "music/song20.mp3", cover: "images/cover20.jpg" },
-  { title: "Cheri Cheri Lady", artist: "Modern Talking", src: "music/song21.mp3", cover: "images/cover21.jpg" }
+  { title: "Cheri Cheri Lady", artist: "Modern Talking", src: "music/song21.mp3", cover: "images/cover21.jpg" },
+  { title: "Tu Mile Dil Khile", artist: "Stebin Ben, Asees Kaur, Larissa B and Lijo G-Dj Chetas", src: "music/song22.mp3", cover: "images/cover22.jpg" }
 ];
 
 const audio = new Audio();
