@@ -1,23 +1,26 @@
 // Sample songs array
 const songs = [
-  {
-    title: "Song One",
-    artist: "Artist One",
-    src: "music/song1.mp3",
-    cover: "images/cover1.jpg",
-  },
-  {
-    title: "Song Two",
-    artist: "Artist Two",
-    src: "music/song2.mp3",
-    cover: "images/cover2.jpg",
-  },
-  {
-    title: "Song Three",
-    artist: "Artist Three",
-    src: "music/song3.mp3",
-    cover: "images/cover3.jpg",
-  },
+  { title: "Pretty Little Baby", artist: "Connie Francis", src: "music/song1.mp3", cover: "images/cover1.jpg" },
+  { title: "Daylight", artist: "David Kushner", src: "music/song2.mp3", cover: "images/cover2.jpg" },
+  { title: "Lonely", artist: "Akon", src: "music/song3.mp3", cover: "images/cover3.jpg" },
+  { title: "Die With A Smile", artist: "Lady Gaga, Bruno Mars", src: "music/song4.mp3", cover: "images/cover4.jpg" },
+  { title: "Unstoppable", artist: "Sia", src: "music/song5.mp3", cover: "images/cover5.jpg" },
+  { title: "BIRDS OF A FEATHER", artist: "Billie Eilish", src: "music/song6.mp3", cover: "images/cover6.jpg" },
+  { title: "Until I Found You", artist: "Stephen Sanchez", src: "music/song7.mp3", cover: "images/cover7.jpg" },
+  { title: "Tu hai kahan", artist: "AUR", src: "music/song8.mp3", cover: "images/cover8.jpg" },
+  { title: "Jo Tum Mere Ho", artist: "Anuv Jain", src: "music/song9.mp3", cover: "images/cover9.jpg" },
+  { title: "Finding Her", artist: "Bharath, Kushagra, and Saaheal", src: "music/song10.mp3", cover: "images/cover10.jpg" },
+  { title: "Kabhi Kabhi", artist: "AUR", src: "music/song11.mp3", cover: "images/cover11.jpg" },
+  { title: "Dil Tu Jaan Tu", artist: "Chet Singh and Gurnazar", src: "music/song12.mp3", cover: "images/cover12.jpg" },
+  { title: "Love Me Like You Do", artist: "Ellie Goulding", src: "music/song13.mp3", cover: "images/cover13.jpg" },
+  { title: "Summertime Sadness", artist: "Lana Del Rey", src: "music/song14.mp3", cover: "images/cover14.jpg" },
+  { title: "ANXIETY", artist: "Sleepy Hallow", src: "music/song15.mp3", cover: "images/cover15.jpg" },
+  { title: "Wildflower", artist: "Billie Eilish and FINNEAS", src: "music/song16.mp3", cover: "images/cover16.jpg" },
+  { title: "blue", artist: "Yung Kai", src: "music/song17.mp3", cover: "images/cover17.jpg" },
+  { title: "Another Love", artist: "Tom Odell", src: "music/song18.mp3", cover: "images/cover18.jpg" },
+  { title: "7 Years", artist: "Jasmine Thompson", src: "music/song19.mp3", cover: "images/cover19.jpg" },
+  { title: "Skyfall", artist: "Adele", src: "music/song20.mp3", cover: "images/cover20.jpg" },
+  { title: "Cheri Cheri Lady", artist: "Modern Talking", src: "music/song21.mp3", cover: "images/cover21.jpg" }
 ];
 
 const audio = new Audio();
