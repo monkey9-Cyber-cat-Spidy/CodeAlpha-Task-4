@@ -1,4 +1,3 @@
-// Sample songs array
 const songs = [
   { title: "Pretty Little Baby", artist: "Connie Francis", src: "music/song1.mp3", cover: "images/cover1.jpg" },
   { title: "Daylight", artist: "David Kushner", src: "music/song2.mp3", cover: "images/cover2.jpg" },
@@ -29,6 +28,8 @@ let currentSong = 0;
 const playBtn = document.getElementById("play");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
+const loopBtn = document.getElementById("loop");
+const autoNextBtn = document.getElementById("autonext");
 
 const title = document.getElementById("title");
 const artist = document.getElementById("artist");
@@ -40,6 +41,9 @@ const durationEl = document.getElementById("duration");
 
 const volumeLevel = document.getElementById("volume-level");
 const playlistEl = document.getElementById("playlist-songs");
+
+let isLooping = false;
+let isAutoNext = true;
 
 function loadSong(song) {
   title.textContent = song.title;
@@ -122,6 +126,27 @@ function populatePlaylist() {
     playlistEl.appendChild(li);
   });
 }
+
+// --- New Features: Loop & AutoNext
+loopBtn.addEventListener("click", () => {
+  isLooping = !isLooping;
+  loopBtn.classList.toggle("active", isLooping);
+});
+
+autoNextBtn.addEventListener("click", () => {
+  isAutoNext = !isAutoNext;
+  autoNextBtn.classList.toggle("active", isAutoNext);
+});
+
+audio.addEventListener("ended", () => {
+  if (isLooping) {
+    playSong();
+  } else if (isAutoNext) {
+    nextSong();
+  } else {
+    pauseSong();
+  }
+});
 
 // Event Listeners
 playBtn.addEventListener("click", togglePlay);
